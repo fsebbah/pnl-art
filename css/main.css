@@ -1,0 +1,219 @@
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f7f1;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23decccc' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar-brand img {
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.title-divider {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    color: #0F52BA;
+    margin-top: 10px;
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    color: #0F52BA;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #3498db;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.highlight {
+    color: #0F52BA;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+}
+
+.highlight::before {
+    content: "✒";
+    font-size: 10em;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    opacity: 0.1;
+    transform: rotate(45deg);
+}
+
+.announcement {
+    background-color: #f0f8ff;
+    border: 2px solid #0F52BA;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    color: #0F52BA;
+    font-size: 1.2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.artistic-border {
+    border: 2px solid #0F52BA;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.artistic-border::before {
+    content: "❦";
+    font-size: 2em;
+    color: #0F52BA;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    background-color: #f9f7f1;
+    padding: 0 10px;
+    transform: translateX(-50%);
+}
+
+.highlight-word {
+    font-family: 'Brush Script MT', 'Brush Script Std', 'Dancing Script', cursive;
+    font-size: 1.6em;
+    color: #0F52BA;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(15, 82, 186, 0.3);
+}
+
+.info-section {
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    background-color: #f9f7f1;
+}
+
+.info-section h4 {
+    color: #0F52BA;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.info-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-section li::before {
+    content: "•";
+    color: #0F52BA;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.info-section ul ul {
+    padding-left: 20px;
+}
+
+.inscription-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #0F52BA;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.inscription-link:hover {
+    background-color: #0D47A1;
+    text-decoration: none;
+}
+
+.invitation {
+    background-color: #f9f7f1;
+    border: 1px solid #0F52BA;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    color: #333;
+    font-size: 0.95em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.invitation h3 {
+    color: #0F52BA;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.invitation strong {
+    color: #0F52BA;
+}
+
+.invitation .highlight-info {
+    background-color: #e6f2ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.contact {
+    color: #0F52BA;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 2px solid #0F52BA;
+    background-color: #f0f8ff;
+}
+
+.contact h3 {
+    color: #0F52BA;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.contact p {
+    margin: 5px 0;
+}
